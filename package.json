@@ -1,0 +1,24 @@
+{
+  "name": "claude-channel-redis",
+  "version": "0.1.0",
+  "description": "Redis pub/sub channel for Claude Code — lets multiple instances on a LAN talk to each other",
+  "module": "channel.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "channel": "bun channel.ts",
+    "cli": "bun cli.ts",
+    "listen": "bun listen.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "ioredis": "^5.10.1",
+    "zod": "^4.3.6"
+  }
+}
